@@ -1,0 +1,115 @@
+/*
+    1. Modularización.
+    2. Importar los archivos modularizados al archivo principal de scss.
+    3. Cambiar el color de todos los botones a gris y luego a azul y luego a #c4b8de (variables).
+    4. Reutilizar todo lo que tenga display flex con características similares (mixing).
+    5. Todos los textos con tamaño 12px excepto h1 y luego cambiarlo a 14px y luego cambiarlo a 10px (mixing).
+    6. Anidar la clase bt (botón) con cada una de las clases de los 4 botones (nesting).
+    7. Cambiar el background-color del header y del footer a rojo y luego a #c4b8de (variables).
+    8. Poner un hover en los botones que cambie al color #635385 y cuando la pantalla sea mayor a 768px que el color de la letra sea blanca (nesting y @media).
+    9. Cambiar el color del borde de todas las cards a red manteniendo el grosor y solid, luego cambiar a #635385 (variables).
+*/
+
+body {
+    margin: 0px;
+}
+
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: aquamarine;
+}
+
+.h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.paragraph {
+    color: blue;
+}
+
+
+/*MAIN*/
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 28vh;
+    margin: 2%;
+}
+
+.c-importing {
+    border: 1px solid grey;
+}
+
+.c-variables {
+    border: 1px solid yellow;
+}
+
+.c-nesting {
+    border: 3px solid red;
+}
+
+.c-mixing {
+    border: 4px solid blue;
+}
+
+.h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.bt {
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    width: 100px;
+    height: 25px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 12px;
+    color: grey;
+    padding: 2%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: aquamarine;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
